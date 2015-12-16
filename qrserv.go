@@ -40,7 +40,7 @@ func HTMLRequest(c *gin.Context) {
 
 func main() {
 	r := gin.Default()
-	r.GET("/png/:URL", PNGRequest)
-	r.GET("/html/:URL", HTMLRequest)
+	r.GET("/png", PNGRequest)
+	r.GET("/html", HTMLRequest)
 	r.Run("127.0.0.1:8080")
 }
